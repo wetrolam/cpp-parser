@@ -4,6 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>src/File.h</itemPath>
+      <itemPath>src/Location.h</itemPath>
+      <itemPath>src/Token.h</itemPath>
+      <itemPath>src/TokenKind.h</itemPath>
+      <itemPath>src/TokenParser.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,6 +17,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>src/TokenParser.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -48,6 +54,18 @@
           <commandLine>-lclangTooling -lclangFrontendTool -lclangFrontend -lclangDriver -lclangSerialization -lclangCodeGen -lclangParse -lclangSema -lclangStaticAnalyzerFrontend -lclangStaticAnalyzerCheckers -lclangStaticAnalyzerCore -lclangAnalysis -lclangARCMigrate -lclangRewrite -lclangRewriteFrontend -lclangEdit -lclangAST -lclangLex -lclangBasic -lclang</commandLine>
         </linkerTool>
       </compileType>
+      <item path="src/File.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Location.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Token.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TokenKind.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TokenParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TokenParser.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -72,6 +90,18 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/File.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Location.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Token.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TokenKind.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TokenParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TokenParser.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
