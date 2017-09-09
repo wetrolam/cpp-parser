@@ -1,5 +1,5 @@
-#ifndef TOKENKIND_H
-#define TOKENKIND_H
+#ifndef TOKEN_KIND_H
+#define TOKEN_KIND_H
 
 #include <clang-c/Index.h>
 #include <string>
@@ -21,4 +21,4 @@ inline std::string str(CXTokenKind kind) {
     }
 }
 
-#endif /* TOKENKIND_H */
+#endif /* TOKEN_KIND_H */
