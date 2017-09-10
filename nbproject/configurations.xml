@@ -12,6 +12,7 @@
       <itemPath>src/DiagnosticSeverity.h</itemPath>
       <itemPath>src/File.h</itemPath>
       <itemPath>src/Location.h</itemPath>
+      <itemPath>src/Parser.h</itemPath>
       <itemPath>src/Token.h</itemPath>
       <itemPath>src/TokenKind.h</itemPath>
       <itemPath>src/TokenParser.h</itemPath>
@@ -25,6 +26,7 @@
                    projectFiles="true">
       <itemPath>src/AstParser.cpp</itemPath>
       <itemPath>src/DiagnosticParser.cpp</itemPath>
+      <itemPath>src/Parser.cpp</itemPath>
       <itemPath>src/TokenParser.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
@@ -82,6 +84,10 @@
       </item>
       <item path="src/Location.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/Parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Parser.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Token.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/TokenKind.h" ex="false" tool="3" flavor2="0">
@@ -133,6 +139,10 @@
       <item path="src/File.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Location.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Parser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Parser.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Token.h" ex="false" tool="3" flavor2="0">
       </item>

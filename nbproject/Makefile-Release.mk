@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/src/AstParser.o \
 	${OBJECTDIR}/src/DiagnosticParser.o \
+	${OBJECTDIR}/src/Parser.o \
 	${OBJECTDIR}/src/TokenParser.o \
 	${OBJECTDIR}/src/main.o
 
@@ -74,6 +75,11 @@ ${OBJECTDIR}/src/DiagnosticParser.o: src/DiagnosticParser.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/DiagnosticParser.o src/DiagnosticParser.cpp
+
+${OBJECTDIR}/src/Parser.o: src/Parser.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Parser.o src/Parser.cpp
 
 ${OBJECTDIR}/src/TokenParser.o: src/TokenParser.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
