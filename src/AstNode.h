@@ -16,7 +16,7 @@ struct AstNode {
 inline std::ostream & operator<<(std::ostream & output, const AstNode & astNode) {
     output << "location: {" << astNode.location << "}";
     output << ", kind: " << std::setw(3) << astNode.kind;
-    output << ", '" << astNode.text << "'";
+    output << ", text: '" << astNode.text << "'";
     return output;
 }
 
