@@ -4,6 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>src/Configuration.h</itemPath>
+      <itemPath>src/Diagnostic.h</itemPath>
+      <itemPath>src/DiagnosticParser.h</itemPath>
+      <itemPath>src/DiagnosticSeverity.h</itemPath>
       <itemPath>src/File.h</itemPath>
       <itemPath>src/Location.h</itemPath>
       <itemPath>src/Token.h</itemPath>
@@ -17,6 +21,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>src/DiagnosticParser.cpp</itemPath>
       <itemPath>src/TokenParser.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
@@ -54,6 +59,16 @@
           <commandLine>-lclangTooling -lclangFrontendTool -lclangFrontend -lclangDriver -lclangSerialization -lclangCodeGen -lclangParse -lclangSema -lclangStaticAnalyzerFrontend -lclangStaticAnalyzerCheckers -lclangStaticAnalyzerCore -lclangAnalysis -lclangARCMigrate -lclangRewrite -lclangRewriteFrontend -lclangEdit -lclangAST -lclangLex -lclangBasic -lclang</commandLine>
         </linkerTool>
       </compileType>
+      <item path="src/Configuration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Diagnostic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DiagnosticParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DiagnosticParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DiagnosticSeverity.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/File.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Location.h" ex="false" tool="3" flavor2="0">
@@ -90,6 +105,16 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/Configuration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Diagnostic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DiagnosticParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DiagnosticParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DiagnosticSeverity.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/File.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Location.h" ex="false" tool="3" flavor2="0">
