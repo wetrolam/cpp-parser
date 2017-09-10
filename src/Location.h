@@ -3,13 +3,14 @@
 
 #include <clang-c/Index.h>
 #include "File.h"
+#include <iomanip>
 
 struct Location {
     CXFile file;
     unsigned line;
     unsigned column;
     unsigned offset;
-    
+
     Location(CXSourceLocation cxlocation) {
         clang_getExpansionLocation(cxlocation, &file, &line, &column, &offset);
     }

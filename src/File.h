@@ -1,28 +1,26 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include <sstream>
-#include <iomanip>
-
-inline std::ostream & operator<<(std::ostream & output, const CXFile file) {
-    if(file != nullptr) {
-        CXString fileName = clang_getFileName(file);
-        output << clang_getCString(fileName);
-        clang_disposeString(fileName);
-    }
-    return output;
-}
+#include <clang-c/Index.h>
+#include <string>
 
 inline std::string path(const CXFile file) {
-    if(file == nullptr) {
-        return "";
-    }
-    else {
+    std::string result;
+
+    if(file != nullptr) {
         CXString clPath = clang_getFileName(file);
-        std::string path = clang_getCString(clPath);
+        const char * path = clang_getCString(clPath);
+        if(path != nullptr) {
+            result = path;
+        }
         clang_disposeString(clPath);
-        return path;
     }
+    return result;
+}
+
+inline std::ostream & operator<<(std::ostream & output, const CXFile file) {
+    output << path(file);
+    return output;
 }
 
 #endif /* FILE_H */
