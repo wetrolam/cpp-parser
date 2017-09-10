@@ -4,6 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>src/AstNode.h</itemPath>
+      <itemPath>src/AstParser.h</itemPath>
       <itemPath>src/Configuration.h</itemPath>
       <itemPath>src/Diagnostic.h</itemPath>
       <itemPath>src/DiagnosticParser.h</itemPath>
@@ -21,6 +23,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>src/AstParser.cpp</itemPath>
       <itemPath>src/DiagnosticParser.cpp</itemPath>
       <itemPath>src/TokenParser.cpp</itemPath>
       <itemPath>src/main.cpp</itemPath>
@@ -59,6 +62,12 @@
           <commandLine>-lclangTooling -lclangFrontendTool -lclangFrontend -lclangDriver -lclangSerialization -lclangCodeGen -lclangParse -lclangSema -lclangStaticAnalyzerFrontend -lclangStaticAnalyzerCheckers -lclangStaticAnalyzerCore -lclangAnalysis -lclangARCMigrate -lclangRewrite -lclangRewriteFrontend -lclangEdit -lclangAST -lclangLex -lclangBasic -lclang</commandLine>
         </linkerTool>
       </compileType>
+      <item path="src/AstNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AstParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AstParser.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Configuration.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Diagnostic.h" ex="false" tool="3" flavor2="0">
@@ -105,6 +114,12 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/AstNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AstParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AstParser.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Configuration.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Diagnostic.h" ex="false" tool="3" flavor2="0">

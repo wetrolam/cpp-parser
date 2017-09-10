@@ -13,4 +13,16 @@ inline std::ostream & operator<<(std::ostream & output, const CXFile file) {
     return output;
 }
 
+inline std::string path(const CXFile file) {
+    if(file == nullptr) {
+        return "";
+    }
+    else {
+        CXString clPath = clang_getFileName(file);
+        std::string path = clang_getCString(clPath);
+        clang_disposeString(clPath);
+        return path;
+    }
+}
+
 #endif /* FILE_H */
