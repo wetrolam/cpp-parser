@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/AstParser.o \
+	${OBJECTDIR}/src/CppHtmliser.o \
 	${OBJECTDIR}/src/DiagnosticParser.o \
 	${OBJECTDIR}/src/Parser.o \
 	${OBJECTDIR}/src/TokenParser.o \
@@ -70,6 +71,11 @@ ${OBJECTDIR}/src/AstParser.o: src/AstParser.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -I/usr/lib/llvm-3.8/include/ -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/AstParser.o src/AstParser.cpp
+
+${OBJECTDIR}/src/CppHtmliser.o: src/CppHtmliser.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I/usr/lib/llvm-3.8/include/ -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/CppHtmliser.o src/CppHtmliser.cpp
 
 ${OBJECTDIR}/src/DiagnosticParser.o: src/DiagnosticParser.cpp
 	${MKDIR} -p ${OBJECTDIR}/src

@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include "Parser.h"
+#include "CppHtmliser.h"
 
 void testParser(std::string filePath)
 {
@@ -27,9 +28,16 @@ void testParser(std::string filePath)
     }
 }
 
+void testCppToHtml(std::string cppFilePath)
+{
+    std::string htmlFilePath = cppToHtml(cppFilePath);
+    std::cout << "output: " << htmlFilePath << std::endl;
+}
+
 int main(int argc, char** argv)
 {
-    testParser("source2.cpp");
+//    testParser("source2.cpp");
+    testCppToHtml("source2.cpp");
 
     return EXIT_SUCCESS;
 }
