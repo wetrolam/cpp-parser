@@ -21,7 +21,9 @@ inline std::string getHtmlBeginning(std::string title)
 {
     return
         "<html>\n"
-        "    <title> " + title + " </title>\n"
+        "    <head>\n"
+        "        <title> " + title + " </title>\n"
+        "    </head>\n"
         "    <body>\n"
         ;
 }
